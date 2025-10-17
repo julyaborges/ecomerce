@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +12,7 @@
         rel="stylesheet">
 </head>
 
-<body class="fonte ">
+<body class="fonte">
     <header class="navegacao">
         <div class="logo"><img src="img/logo.png" width="160"></div>
         <nav class="menu">
@@ -28,24 +27,31 @@
         </nav>
     </header>
 
-    <div  id="paragrafo1" style="text-align: center;">
+    <div style="text-align: center;">
         <br><br>
-        <div id="login">
-            <h2>Login</h2>
-            <br>
-            <label for="login">Login:</label>
-            <br>
-            <input type="text" name="inputLogin">
-        </div>
+        <h2>Cadastro</h2>
+        <br>
+        <label for="nome">Nome completo:</label>
+        <br>
+        <input type="text" name="inputNome">
+        <br><br>
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="inputEmail">
         <br><br>
         <label for="senha">Senha:</label>
         <br>
         <input type="password" name="inputSenha">
         <br><br>
-        <input type="button" value="Entrar">
+        <label for="confirmaSenha">Confirmar senha:</label>
+        <br>
+        <input type="password" name="inputConfirmaSenha">
         <br><br>
-        <p>Não tem uma conta?<a href="cadastro.html" style="color: #165292;"> Fazer cadastro</a></p>
+        <input type="button" value="Cadastrar">
+        <br><br>
+        <p>Já tem uma conta? <a href="login.html" style=" color: #165292;">Fazer Login</a></p>
     </div>
+
 </body>
 
 </html>
