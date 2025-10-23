@@ -1,0 +1,57 @@
+/* Container principal */
+.carousel-container {
+  width: 100%;
+  background-color: #778ca2;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Linha dos cards */
+.carousel {
+  display: flex;
+  justify-content: center;   /* centraliza horizontalmente */
+  align-items: center;       /* centraliza verticalmente */
+  gap: 3%;                   /* espaçamento proporcional */
+  flex-wrap: nowrap;         /* mantém em uma linha */
+  width: 90%;
+  max-width: 1200px;         /* limite opcional para não esticar demais em telas grandes */
+  margin: 0 auto;            /* garante centralização */
+}
+
+/* Cada card */
+.card {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+  min-width: 100px;
+  max-width: 220px;
+}
+
+/* Responsividade — cards diminuem proporcionalmente */
+@media (max-width: 1024px) {
+  .card {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    max-width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    max-width: 100px;
+  }
+}
+
+/* Efeito hover opcional */
+.card:hover {
+  transform: scale(1.05);
+}

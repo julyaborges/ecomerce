@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slide.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wdth,wght@0,87.5,100..900;1,87.5,100..900&display=swap"
+        rel="stylesheet">
+    <!--Carrossel-->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick-theme.min.css'>
+    <link rel="stylesheet"
+        href="https://www.loopnerd.com.br/artigos/jquery/carrossel-html-e-css-pronto/css/style-carousel.css">
+    <!--Carrossel-->
+</head>
+
+<body class="fonte">
+    <header class="navegacao">
+        <div class="logo"><img src="img/logo.png" width="160"></div>
+        <nav class="menu">
+            <ul>
+                <li id="item1"><a href="index.html" style="text-decoration: none; color: white; font-size: 22px;">Home
+                </li>
+                <li id="item2"><a href="login.html"
+                        style="text-decoration: none; color: white; font-size: 22px">Login</a></li>
+                <li id="item3"><a href="compras.html"><img class="" src="img/cart.png" alt="carrinho" width="32"
+                            height="32"></a></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="slideshow-container">
+        <br><br>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img/diabetes.png" style="width:100%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img/beleza.png" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img/medico.png" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <br><br>
+    </div>
+    <div style="text-align: center;">
+        <h2 style="color: #455363;">Promoções da Semana</h2>
+    </div>
+    <br>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="card"> <img src="img/shampoo.png" style="width:100%"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+            <div class="card"></div>
+        </div>
+    </div>
+
+    <div class="campoTexto" style="align-items: center;">
+        <br><br>
+        <div class="tituloIndex" style="text-align: center;">
+            <h2 style="color: #455363;">Destaque da Semana</h2>
+        </div>
+        <br>
+
+        <div class="conteudo">
+            <div class="foto">
+                <img src="img/dipirona.jpg" style="width: 500px;">
+            </div>
+
+            <div class="paragrafo">
+                <p style="text-align: justify;">A dipirona (ou metamizol) é um medicamento analgésico, antitérmico e antiespasmódico, usado para aliviar dor (como dor de cabeça, cólica ou dor muscular) e reduzir febre.<br><br>
+
+                    Ela age diminuindo a produção de substâncias chamadas prostaglandinas, que estão envolvidas nos processos de dor e inflamação.<br><br>
+                    
+                    A dipirona pode ser administrada por via oral, injetável ou em gotas, e começa a agir geralmente em 30 a 60 minutos.<br><br>
+                    
+                    Embora seja muito utilizada, especialmente no Brasil, deve ser usada com cuidado, pois pode causar reações alérgicas e, em casos raros, agranulocitose — uma redução grave das células de defesa do sangue. Por isso, deve ser usada com orientação médica e na dose correta.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="coluna, coluna1">
+                <p>
+                    Farmácia Vida Saudável<br>
+                    Cuidando da sua saúde com qualidade e compromisso.<br>
+                    Há mais de 10 anos oferecendo os melhores medicamentos<br> e produtos de bem-estar.<br>
+                    Endereço fictício:
+                    Rua das Flores, 123 — Centro,<br> São Paulo - SP<br>
+                    Telefone: (11) 99999-9999<br>
+                    E-mail: contato@vidasaudavel.com.br
+                </p>
+            </div>
+            <div class="coluna, coluna2">
+                <p>
+                    🏠 - Home<br>
+                    💻 - Produtos<br>
+                    📦 - Ofertas<br>
+                    👨‍⚕️ - Atendimento<br>
+                    📞 - Fale Conosco<br>
+                    🔒 - Política de Privacidade
+                </p>
+            </div>
+            <div class="coluna, coluna3">
+                <p>
+                    Horário de funcionamento:<br>
+                    Segunda a Sexta: 08h às 20h<br>
+                    Sábados: 08h às 14h<br>
+                    Atendimento 24h pelo WhatsApp: (11) 98888-8888<br>
+                    Retire na loja: Faça seu pedido online e retire pessoalmente.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+    </script>
+</body>
+
+</html>
