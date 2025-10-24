@@ -36,19 +36,37 @@
             <br>
             <label class="login" for="login">Login:</label>
             <br>
-            <input type="text" name="inputLogin">
+            <input type="text" name="inputLogin" id="inputLogin">
         </div>
         <br><br>
         <label class="senha" for="senha">Senha:</label>
         <br>
-        <input type="password" name="inputSenha">
+        <input type="password" name="inputSenha" id="inputSenha">
         <br><br><br>
-        <input type="button" class="button" value="Entrar">
+        <input type="button" class="button" id="button" value="Entrar">
     </div>
     <div style="text-align: center;">
         <br>
-        <p>Não tem uma conta? <a href="cadastro.html" style="color: #165292;">Fazer cadastro</a></p>
+        <p>Não tem uma conta? <a href="cadastro.html" style="color: #165292;">Fazer cadastro</a></p><br>
+        <span id="msgUsuario" style="color: red;"></span>
     </div>
-</body>
 
+    <script>
+
+        let botao = document.querySelector('#button');
+        botao.addEventListener('click', function(){
+            let login = document.querySelector('#inputLogin').value;
+            let senha = document.querySelector('#inputSenha').value;
+
+            let msgUsuario = document.querySelector('#msgUsuario');
+            
+            if(senha !== '123'){
+                msgUsuario.innerText = `Usuário ou senha incorreto.`;
+            }else{
+                window.location.href = "/index.html";
+            }
+        })
+
+    </script>
+</body>
 </html>

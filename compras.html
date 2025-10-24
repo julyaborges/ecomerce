@@ -19,104 +19,74 @@
         <div class="logo"><img src="img/logo.png" width="160"></div>
         <nav class="menu">
             <ul>
-                <li id="item1"><a href="index.html" style="text-decoration: none; color: white; font-size: 22px;">Home
-                </li>
+                <li id="item1"><a href="index.html"
+                        style="text-decoration: none; color: white; font-size: 22px;">Home</a></li>
                 <li id="item2"><a href="login.html"
                         style="text-decoration: none; color: white; font-size: 22px">Login</a></li>
-                <li id="item3"><a href="compras.html"><img class="" src="img/cart.png" alt="carrinho" width="32"
-                            height="32"></a></i></li>
+                <li id="item3"><a href="compras.html"><img src="img/cart.png" alt="carrinho" width="32" height="32"></a>
+                </li>
             </ul>
         </nav>
     </header>
 
-    <div class="produtos">
+    <!-- container principal -->
+    <div class="container">
+        <div class="coluna">
 
+            <!-- produtos -->
+            <div id="produto1" class="produto">
+                <img src="img/shampoo.png" alt="shampoo">
+                <div class="descricao">
+                    <p> Shampoo L'oréal Paris Elseve 400ml<br></p>
+                    <p>R$ 29,80</p>
+                    <input type="number" min="0" id="quantidade1" style="width: 30px;">
+                </div>
+            </div><br>
+
+            <div id="produto2" class="produto">
+                <img src="img/omeprazol.png" alt="omeprazol">
+                <div class="descricao">
+                    <p>Omeprazol 20mg</p>
+                    <p>R$ 16,90</p>
+                    <input type="number" min="0" id="quantidade2" style="width: 30px;">
+                </div>
+            </div><br>
+
+            <div id="produto3" class="produto">
+                <img src="img/buscopan.png" alt="buscopan">
+                <div class="descricao">
+                    <p>Buscopan Composto 250 mg</p>
+                    <p>R$ 23,90</p>
+                    <input type="number" min="0" id="quantidade3" style="width: 30px;">
+                </div>
+            </div><br>
+
+            <div id="produto4" class="produto">
+                <img src="img/huggies.png" alt="huggies">
+                <div class="descricao">
+                    <p>Lenço Umidecido Huggies</p>
+                    <p>R$ 32,60</p>
+                    <input type="number" min="0" id="quantidade4" style="width: 30px;">
+                </div>
+            </div><br>
+
+            <div id="produto5" class="produto">
+                <img src="img/algodao.png" alt="cabelo">
+                <div class="descricao">
+                    <p>Discos de Algodão Cotton</p>
+                    <p>R$ 7,85</p>
+                    <input type="number" min="0" id="quantidade5" style="width: 30px;">
+                </div>
+            </div><br>
+
+        </div>
+
+        <!-- bloco de compra fixo no topo direito -->
+        <div class="compra">
+            <p class="total">R$ 110,78</p>
+            <button class="botao-finalizar" id="button">Finalizar compra</button>
+        </div>
     </div>
-
-    <div class="compra">
-        <p class="total">R$ 656,00</p>
-        <button class="botao-finalizar" onclick="alert('Compra realizada com sucesso')">Finalizar compra</button>
-    </div>
-
-    <div id="produto1" class="produto">
-
-        <img src="img/Primer.png" alt="primer">
-
-        <div class="descricao">
-            <p>Kit Una Rotina de Maquiagem com Primer <br>Blur e Bruma Hidratante Fixadora (2 produtos)</p>
-            <p>R$ 98,80</p>
-            <input type="number" style="width: 30px;">
-        </div>
-
-    </div><br>
-
-    <div id="produto1" class="produto">
-
-        <img src="img/batom.png" alt="batom">
-
-        <div class="descricao">
-            <p>Batom Matte Faces 3,5g</p>
-            <div class="cores">
-                <div class="cor" style="background-color: rgb(240, 96, 96);"></div>
-                <div class="cor" style="background-color: rgb(221, 11, 109);"></div>
-                <div class="cor" style="background-color: rgb(133, 12, 12);"></div>
-                <div class="cor" style="background-color: rgb(243, 159, 166);"></div>
-            </div>
-            <p>R$ 16,90</p>
-
-            <input type="number" style="width: 30px;">
-        </div><br>
-
-    </div><br>
-
-    <div id="produto1" class="produto">
-
-        <img src="img/rimel.png" alt="rimel">
-
-        <div class="descricao">
-            <p>Multimáscara para Cílios à<br> Prova D’Água Faces</p>
-            <p>R$ 55,90</p>
-            <input type="number" style="width: 30px;">
-        </div>
-
-    </div><br>
-
-    <div id="produto1" class="produto">
-
-        <img src="img/kit.png" alt="rimel">
-
-        <div class="descricao">
-            <p>Presente Natura Aura Alba<br> Completo (3 produtos)</p>
-            <p>R$ 379,60</p>
-            <input type="number" style="width: 30px;">
-        </div>
-
-    </div><br>
-
-    <div id="produto1" class="produto">
-
-        <img src="img/cabelo.png" alt="rimel">
-
-        <div class="descricao">
-            <p>Kit Reparador Tododia Flor <br>de Cereja e Abacate</p>
-            <p>R$ 62,82</p>
-            <input type="number" style="width: 30px;">
-        </div>
-
-    </div><br>
-
-    <div id="produto1" class="produto">
-
-        <img src="img/rimel1.png" alt="rimel">
-
-        <div class="descricao">
-            <p>Multimáscara Tint para Cílios<br> à Prova D’Água Faces</p>
-            <p>55,60</p>
-            <input type="number" style="width: 30px;">
-        </div>
-
-
-    </div><br>
 
     <footer>
         <div class="footer-container">
@@ -158,6 +128,16 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        let botao = document.querySelector('#button');
+        botao.addEventListener('click', function(){
+           alert('Compra realizada com sucesso')
+           window.location.href = "index.html";
+
+        })
+
+    </script>
 </body>
 
 </html>

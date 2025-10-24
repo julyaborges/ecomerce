@@ -43,19 +43,39 @@
         <br><br>
         <label class="senhaCadastro" for="senha">Senha:</label>
         <br>
-        <input type="password" name="inputSenha">
+        <input type="password" name="inputSenha" id="inputSenha">
         <br><br>
         <label class="confirmaSenha" for="confirmaSenha">Confirmar senha:</label>
         <br>
-        <input type="password" name="inputConfirmaSenha">
+        <input type="password" name="inputConfirmaSenha" id="confirmaSenha">
         <br><br><br>
-        <input type="button" class="button" value="Cadastrar">
+        <input type="button" class="button" value="Cadastrar" id="button">
         <br><br>
     </div>
     <div style="text-align: center;">
         <br>
-        <p>Já tem uma conta? <a href="login.html" style=" color: #165292;">Fazer Login</a></p>
+        <p>Já tem uma conta? <a href="login.html" style=" color: #165292;">Fazer Login</a></p><br>
+        <span id="msgMensagem" style="color: red;"></span>
     </div>
+
+    <script>
+
+        let botao = document.querySelector('#button');
+        botao.addEventListener('click', function(){
+            let senha = document.querySelector('#inputSenha').value;
+            let confirmaSenha = document.querySelector('#confirmaSenha').value;
+            
+            let msgMensagem = document.querySelector('#msgMensagem');
+
+            if(senha !== confirmaSenha){
+                msgMensagem.innerText = `Confirmar senha novamente.`;
+            }else{
+                alert('Cadastro realizado com sucesso!');
+                window.location.href = "/login.html";
+            }
+        })
+
+    </script>
 
 </body>
 
